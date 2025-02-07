@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# Tienda Virtual - Sex Shop (React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto es una tienda virtual desarrollada con **React Native**, diseñada para ejecutarse en **dispositivos Android**.  
+La aplicación obtiene productos desde una base de datos mediante llamadas a la API publicada en:  
+[http://sexshop.runasp.net/](http://sexshop.runasp.net/).  
 
-## Get started
+Los usuarios pueden explorar productos, agregarlos al **carrito de compras** y proceder al pago con diferentes métodos de procesamiento.
 
-1. Install dependencies
+## Tecnologías Utilizadas
 
-   ```bash
-   npm install
-   ```
+- **React Native**: Framework de JavaScript para el desarrollo de aplicaciones móviles.
+- **Expo**: Plataforma para compilar y probar la aplicación en dispositivos Android.
+- **APIs REST**: Conexión con servicios web para la gestión de productos, usuarios y compras.
 
-2. Start the app
+## Características Principales
 
-   ```bash
-    npx expo start
-   ```
+1. **Acceso con Usuario**: Para ingresar a la tienda, se requiere una cuenta registrada previamente en la base de datos.
+2. **Listado de Productos**: Se obtienen desde la base de datos mediante llamadas a la API.
+3. **Carrito de Compras**: Los productos pueden añadirse y visualizarse en el carrito antes de finalizar la compra.
+4. **Cálculo de Pago**: Se calcula el total a pagar incluyendo el **IVA**.
+5. **Métodos de Pago**:  
+   - **Compra Instantánea**: Reduce el stock inmediatamente y marca la factura como **Pagada**.  
+   - **Pago desde Banca**: Simula una integración con un banco, donde la factura queda en **Pendiente** hasta que se complete el pago. En este caso, el stock no se reduce hasta la confirmación.
 
-In the output, you'll find options to open the app in a
+## Instalación y Configuración
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Para ejecutar el proyecto localmente, recuerda instalar las respectivas dependencias con:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   `npm install`
 
-## Get a fresh project
+## Conexión con la API
 
-When you're ready, run:
+Este sistema se conecta con las APIs publicadas en [http://sexshop.runasp.net/](http://sexshop.runasp.net/).  
+Para más detalles sobre los endpoints disponibles y su funcionamiento, consulta el otro proyecto en mi GitHub: **ApiRestSexShop**.
 
-```bash
-npm run reset-project
-```
+## Recomendaciones
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Este proyecto es una simulación de una tienda virtual con integración de pagos y manejo de stock.
+Se recomienda implementar mejoras en seguridad y optimización antes de usarlo en un entorno real.
 
-## Learn more
+## Licencia
 
-To learn more about developing your project with Expo, look at the following resources:
+Este proyecto es de **uso libre** para fines educativos y de demostración.  
+No debe utilizarse en producción sin los ajustes y pruebas correspondientes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Contacto
 
-## Join the community
+Si tienes preguntas o sugerencias, no dudes en contactarme a través de **GitHub** o por correo electrónico en **jose.david.acu@outlook.com**.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> *Este proyecto fue desarrollado como parte de un ejercicio de integración de servicios backend con React Native.*
